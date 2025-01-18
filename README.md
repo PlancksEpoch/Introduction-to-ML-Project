@@ -12,11 +12,18 @@ This repository documents my journey to create an intelligent virtual agent, nam
 
 ## Repository Structure
 
-- **Proposal**: Contains the project proposal detailing the philosophical foundation and technical approach. ([View PDF](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Proposal/DSC412_001_FA24_PR_sbrantl.pdf))
-- **Final Report**: Documents the project's development, results, and future directions. ([View PDF](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Final_Report/DSC412_001_FA24_FR_sbrantl.pdf))
+- [Proposal]((https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Proposal/DSC412_001_FA24_PR_sbrantl.pdf)): Contains the project proposal detailing the philosophical foundation and technical approach.
+- [Final Report](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Final_Report/DSC412_001_FA24_FR_sbrantl.pdf): Documents the project's development, results, and future directions.
 - **Mazerunner_ML_Final_Code_Base**: The Unity project files, including scripts and configurations for training Boats.
-- **config/mazerunner_config.yml**: YAML file for training configurations.
-- **requirements.txt**: Python dependencies for setting up the conda environment.
+    **Notable Scripts**:
+      1. [LineRecorder.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/LineRecorder.cs): Records and visualizes the agent's movement across the environment, providing a potential basis for comparing RL trajectories with human navigation data.
+      2. [PlayerAgent.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/PlayerAgent.cs): Implements the core reinforcement learning behavior, including observation, action execution, and reward calculation. This script directly interacts with Unity ML-Agents to train Boats to complete tasks efficiently.
+      3. [PlayerController.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/PlayerController.cs): Manages basic player mechanics, such as movement and interactions, ensuring Boats navigates the environment correctly.
+      4. [GameManager.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/GameManager.cs): Oversees overall game logic, including initializing and resetting game states. It plays a vital role in creating a controlled environment for reinforcement learning experiments.
+      5. [GameTimer.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/GameTimer.cs): Tracks and formats the elapsed time during gameplay or training. It enables performance metrics, such as time efficiency, to be recorded and displayed.
+      6. [Waypoint.cs](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/Assets/Scripts/Waypoint.cs): Represents waypoints in the environment that Boats must collect. Each waypoint's status is tracked to determine task completion.
+- [config/mazerunner_config.yml](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/Mazerunner_ML_Final_Code_Base/config/mazerunner_config.yml): YAML file for training configurations.
+- [requirements.txt](https://github.com/PlancksEpoch/Introduction-to-ML-Project/blob/main/requirements.txt): Python dependencies for setting up the conda environment.
 
 ## Metaphysics Meets Virtual Reality
 
